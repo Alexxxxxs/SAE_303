@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphiques ECharts - Motorisations</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="script_C.js" defer></script>
+    <link rel="stylesheet" href="style_C.css">
+</head>
+
+<body>
+        <header class="relative">
+        <div class="flex items-center justify-start">
+            <a href="index.html" class="mr-4 text-white hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </a>
+            <h1 class="text-4xl font-bold text-white">Immatriculations et Motorisations</h1>
+        </div>
+    </header>
+
+    <!-- Section des graphiques existants -->
+    <div class="chart-container">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+            <div style="flex: 1;">
+                <h2>Immatriculations de Voitures Électriques <br>(2010-2022)</h2>
+                <p style="font-size: 16px; line-height: 1.5;">
+                    Ce graphique montre l'évolution des immatriculations de voitures électriques en France entre 2010 et 2022. 
+                    On remarque une forte augmentation chez les particuliers à partir de 2019, reflétant une adoption croissante des véhicules électriques. 
+                    Chez les professionnels, la progression est également marquée, bien qu'un peu moins rapide.
+                </p>
+            </div>
+            <div id="line-chart" style="flex: 1; height: 400px;"></div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+            <div id="pie-chart" style="flex: 1; height: 400px;"></div>
+            <div style="flex: 1;">
+                <h2>Répartition des Motorisations en 2022</h2>
+                <p style="font-size: 16px; line-height: 1.5;">
+                    Ce graphique montre les types de motorisations en 2022. Les moteurs essence dominent toujours, représentant 38 % des véhicules. 
+                    Les véhicules électriques arrivent en deuxième position avec 25 %, suivis des moteurs diesel traditionnels et hybrides non rechargable, qui continuent à diminuer.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nouveau graphique : Répartition des Motorisations par Année -->
+    <div class="chart-container">
+        <h2 style="text-align: center;">Répartition des Motorisations par Année en %</h2>
+        <div id="stacked-bar-chart" style="width: 100%; height: 400px;"></div>
+        <p style="font-size: 16px; line-height: 1.5; text-align: center;">
+            Ce graphique illustre l'évolution des parts de marché des différentes motorisations de 2012 à 2022. 
+            On observe une diminution progressive des motorisations diesel au profit des motorisations essence, hybrides et électriques, 
+            reflétant une transition vers des véhicules plus respectueux de l'environnement.
+        </p>
+        <p style="font-size: 14px; line-height: 1.5; text-align: center; color: gray;">
+            Note : Les données s'arrêtent à 2022 car les statistiques officielles les plus récentes disponibles proviennent des rapports publiés en 2022. <br>
+            Ces données ne prennent pas en compte les autres types de carburant (gpl, éthanol, etc.)
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Voitures Électriques. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

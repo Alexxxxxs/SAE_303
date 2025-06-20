@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #2563eb;
+    /* Couleur de l'en-tête */
+    padding: 20px;
+    /* Espacement autour */
+}
+
+header .flex {
+    display: flex;
+    align-items: center;
+    /* Aligne verticalement la flèche et le titre */
+    justify-content: flex-start;
+    /* Place le contenu à gauche */
+}
+
+header a {
+    display: inline-flex;
+    /* Assurez-vous que l'icône SVG est bien alignée */
+}
+
+header svg {
+    width: 20px;
+    /* Réduisez la taille de la flèche */
+    height: 20px;
+    stroke: white;
+    /* Couleur blanche */
+    transition: stroke 0.3s ease;
+}
+
+header a:hover svg {
+    stroke: #d1d5db;
+    /* Couleur grise au survol */
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.chart-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f2937;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    /* Centre les boutons horizontalement */
+    gap: 15px;
+    /* Espace entre les boutons */
+    margin-top: 20px;
+}
+
+nav button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #1d4ed8;
+    /* Couleur plus foncée au survol */
+}
+
+nav button:active {
+    background-color: #3b82f6;
+    /* Couleur différente lors du clic */
+}
+
+a.absolute {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    /* Optionnel, pour un espace cliquable */
+}
+
+svg.w-4.h-4 {
+    width: 16px;
+    /* Taille fixe pour la flèche */
+    height: 16px;
+}

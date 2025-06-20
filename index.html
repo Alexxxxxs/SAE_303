@@ -1,56 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Cars Dashboard</title>
+    <title>Accueil - Voitures Électriques</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <header class="bg-blue-600 text-white p-4 shadow">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold">Electric Cars Dashboard</h1>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="index.html" class="hover:underline">Home</a></li>
-                    <li><a href="stats.html" class="hover:underline">Statistics</a></li>
-                    <li><a href="about.html" class="hover:underline">About</a></li>
-                </ul>
-            </nav>
+
+<body class="bg-gray-100">
+
+    <!-- Fullscreen Video Section -->
+    <section class="relative h-screen">
+        <video id="fullscreenVideo" autoplay loop muted playsinline class="relative w-full h-full object-cover">
+            <source src="video_index.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture des vidéos.
+        </video>
+        <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold">Qui sont les Français qui choisissent une voiture électrique ?
+            </h1>
+            <p class="mt-4 text-lg md:text-2xl">Explorez les données et découvrez les profils des utilisateurs de
+                voitures électriques en France.</p>
+            <a href="#images" class="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-lg font-medium">En
+                savoir plus</a>
         </div>
-    </header>
+    </section>
 
-    <main class="container mx-auto mt-8">
-        <section class="text-center">
-            <h2 class="text-2xl font-semibold mb-4">Welcome to the Electric Cars Dashboard</h2>
-            <p class="text-gray-600">Explore the latest trends and statistics about electric cars, their buyers, and much more.</p>
-        </section>
 
-        <section class="mt-12">
-            <h3 class="text-xl font-semibold mb-4">Quick Stats</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white p-4 rounded shadow">
-                    <h4 class="text-lg font-medium">Total Sales</h4>
-                    <p class="text-3xl font-bold text-blue-600">1,230,000</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <h4 class="text-lg font-medium">Average Buyer Age</h4>
-                    <p class="text-3xl font-bold text-blue-600">35</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <h4 class="text-lg font-medium">Family Buyers</h4>
-                    <p class="text-3xl font-bold text-blue-600">58%</p>
-                </div>
+
+    <!-- Image Section -->
+    <section id="images" class="image-section">
+        <div class="relative image-wrapper">
+            <img src="img1.jpg" alt="Image 1">
+            <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h2 class="text-3xl font-bold">Combien ?</h2>
+                <p class="mt-2 text-lg">État des lieux de la quantité des voitures électriques </p>
+                <a href="combien.html"
+                    class="mt-4 px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-lg font-medium">Voir
+                    plus</a>
             </div>
-        </section>
-    </main>
+        </div>
+        <div class="relative image-wrapper">
+            <img src="img2.jpg" alt="Image 2">
+            <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h2 class="text-3xl font-bold">Qui ? </h2>
+                <p class="mt-2 text-lg">Quels Français achètent des voitures électriques</p>
+                <a href="qui.html"
+                    class="mt-4 px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-lg font-medium">Voir
+                    plus</a>
+            </div>
+        </div>
+    </section>
 
-    <footer class="bg-blue-600 text-white text-center p-4 mt-12">
-        <p>&copy; 2025 Electric Cars Dashboard. All rights reserved.</p>
-    </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <!-- Fullscreen Image Section -->
+    <section class="relative h-screen group overflow-hidden">
+        <img src="map.jpg" alt="Image pleine page"
+            class="relative w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+        <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h1 class="text-4xl md:text-6xl font-bold">Où ?</h1>
+            <p class="mt-4 text-lg md:text-2xl">Pourcentage des véhicules électriques par départements</p>
+            <a href="ou.html" class="mt-6 px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg text-lg font-medium">En
+                savoir
+                plus</a>
+        </div>
+    </section>
+
+
+
+ 
+
+    <!-- Mute/Unmute Button and Volume Control -->
+    <div class="absolute top-8 left-8 flex items-center space-x-4 bg-gray-800 p-3 rounded-lg shadow-lg">
+        <!-- Mute/Unmute Button -->
+        <div id="muteButton" class="cursor-pointer">
+            <img src="https://img.icons8.com/material-rounded/24/ffffff/mute.png" alt="Mute Icon" id="muteIcon">
+        </div>
+
+        <!-- Volume Slider -->
+        <input id="volumeSlider" type="range" min="0" max="1" step="0.1" value="0.5"
+            class="w-40 h-2 rounded-full appearance-none bg-gray-400 cursor-pointer">
+    </div>
+
+
+    <script src="script_index.js"></script>
 </body>
+
 </html>

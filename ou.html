@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Interactive des Départements Français</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style_O.css">
+
+
+</head>
+
+<body>
+    <header class="relative">
+        <div class="flex items-center justify-start">
+            <a href="index.html" class="mr-4 text-white hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </a>
+            <h1 class="text-4xl font-bold text-white">Carte Interactive des Départements Français</h1>
+        </div>
+    </header>
+
+
+
+
+    <!-- Section Carte -->
+    <div class="chart-container">
+        <div class="text-container">
+            <h2>Pourcentage de voitures électriques par Départements</h2>
+            <p>
+                Passez votre souris sur les départements de la carte ci-dessous pour voir le pourcentage de véhicules électriques par départements
+    
+            </p>
+        </div>
+        <div id="map"></div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Cartes Interactives. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script_O.js"></script>
+</body>
+
+</html>

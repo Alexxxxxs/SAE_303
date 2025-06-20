@@ -1,0 +1,181 @@
+/* Masquer la barre de défilement tout en permettant le défilement */
+body {
+
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+
+
+
+
+
+header {
+    background-color: #2563eb;
+    /* Couleur de l'en-tête */
+    padding: 20px;
+    /* Espacement autour */
+}
+
+header .flex {
+    display: flex;
+    align-items: center;
+    /* Aligne verticalement la flèche et le titre */
+    justify-content: flex-start;
+    /* Place le contenu à gauche */
+}
+
+header a {
+    display: inline-flex;
+    /* Assurez-vous que l'icône SVG est bien alignée */
+}
+
+header svg {
+    width: 20px;
+    /* Réduisez la taille de la flèche */
+    height: 20px;
+    stroke: white;
+    /* Couleur blanche */
+    transition: stroke 0.3s ease;
+}
+
+header a:hover svg {
+    stroke: #d1d5db;
+    /* Couleur grise au survol */
+}
+
+header h1 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f2937;
+    color: white;
+}
+
+.tooltip {
+    position: absolute;
+    background: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    pointer-events: none;
+    font-size: 14px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    font-size: 48px;
+    /* Agrandissez le titre principal */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    /* Sous-titres plus gros */
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    /* Texte des paragraphes plus grand */
+    line-height: 1.8;
+    /* Meilleure lisibilité */
+}
+
+
+
+
+.chart-container {
+    max-width: 1400px;
+    /* Largeur maximale pour la section */
+    margin: 40px auto;
+    /* Centrer la section */
+    padding: 40px;
+    /* Ajouter de l'espace interne */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    /* Ombre pour un effet visuel */
+    display: flex;
+    flex-direction: column;
+    /* Aligner les éléments verticalement */
+    gap: 20px;
+    /* Ajouter un espace entre les éléments */
+    align-items: center;
+    /* Centrer les éléments horizontalement */
+}
+
+.text-container {
+    text-align: center;
+    /* Centrer le texte */
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+#map {
+    width: 100%;
+    /* Faire occuper toute la largeur du conteneur */
+    height: 600px;
+    /* Ajuster la hauteur de la carte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* Centrer la carte horizontalement */
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    /* Centre les boutons horizontalement */
+    gap: 15px;
+    /* Espace entre les boutons */
+    margin-top: 20px;
+}
+
+nav button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #1d4ed8;
+    /* Couleur plus foncée au survol */
+}
+
+nav button:active {
+    background-color: #3b82f6;
+    /* Couleur différente lors du clic */
+}
+
+a.absolute {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    /* Optionnel, pour un espace cliquable */
+}
+
+svg.w-4.h-4 {
+    width: 16px;
+    /* Taille fixe pour la flèche */
+    height: 16px;
+}

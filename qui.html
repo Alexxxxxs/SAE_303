@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphiques ECharts - Profils des Acheteurs</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="script_Q.js" defer></script>
+    <link rel="stylesheet" href="style_C.css">
+</head>
+
+<body>
+    <header class="relative">
+        <div class="flex items-center justify-start">
+            <a href="index.html" class="mr-4 text-white hover:text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+            </a>
+            <h1 class="text-4xl font-bold text-white">Profil des acheteurs</h1>
+        </div>
+    </header>
+
+    <!-- Répartition par Tranche d'Âge -->
+    <div class="chart-container">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+            <div style="flex: 1;">
+                <h2>Répartition par Tranche d'Âge</h2>
+                <p style="font-size: 16px; line-height: 1.5;">
+                    Ce graphique illustre la répartition des parts de marché des véhicules électriques et hybrides
+                    rechargeables selon les tranches d'âge. Les acheteurs âgés de 25 à 40 ans dominent le marché,
+                    représentant une adoption significative des véhicules modernes. Les 40-55 ans suivent de près,
+                    confirmant l'intérêt croissant pour les véhicules électriques parmi les tranches d'âge actives et
+                    économiquement établies. En revanche, les plus jeunes (18 à 25 ans) et les personnes âgées (65 ans
+                    et plus) restent des segments minoritaires.
+                </p>
+            </div>
+            <div id="age-distribution-chart" style="flex: 1; height: 400px;"></div>
+        </div>
+    </div>
+
+    <!-- Répartition par Sexe -->
+    <div class="chart-container">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+            <div id="gender-chart" style="flex: 1; height: 400px;"></div>
+            <div style="flex: 1;">
+                <h2>Répartition par Sexe</h2>
+                <p style="font-size: 16px; line-height: 1.5;">
+                    Le diagramme circulaire met en évidence une répartition marquée entre les sexes, avec une
+                    prédominance masculine (85 %) parmi les acheteurs de véhicules électriques. Cela pourrait
+                    s'expliquer
+                    par des facteurs culturels, sociaux et économiques qui influencent la prise de décision d'achat. En
+                    revanche, les femmes représentent 15 % des acheteurs, un chiffre qui pourrait augmenter à mesure que
+                    les voitures électriques deviennent plus accessibles et adaptées à différents besoins.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lieu de Résidence -->
+    <div class="chart-container">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+            <div style="flex: 1;">
+                <h2>Lieu de Résidence</h2>
+                <p style="font-size: 16px; line-height: 1.5;">
+                    Ce graphique révèle que 71 % des acheteurs de véhicules électriques résident en milieu urbain. Cela
+                    s'explique principalement par la disponibilité plus élevée des infrastructures de recharge et les
+                    incitations locales pour les véhicules électriques dans les grandes villes. En revanche, seulement
+                    29 % des acheteurs vivent en milieu rural, où les défis liés à l'autonomie et à la recharge restent
+                    des obstacles majeurs.
+                </p>
+            </div>
+            <div id="residence-chart" style="flex: 1; height: 400px;"></div>
+        </div>
+    </div>
+
+    <!-- Motivations d'Achat -->
+    <div class="chart-container">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+            <div id="motivations-chart" style="flex: 1; height: 400px;"></div>
+            <div style="flex: 1;">
+                <h2>Motivations d'Achat</h2>
+                <p style="font-size: 16px; line-height: 1.5;">
+                    Les motivations principales des acheteurs de véhicules électriques reflètent des préoccupations
+                    environnementales et économiques. La réduction de l'empreinte carbone est citée par 40 % des
+                    acheteurs comme la principale raison, tandis que les économies de carburant (30 %) et les
+                    incitations
+                    fiscales* (20 %) jouent également un rôle important. La réduction des nuisances sonores, bien que
+                    moins
+                    prioritaire (10 %), est une motivation notable dans les zones urbaines.
+                </p>
+                <p style="font-size: 14px; line-height: 1.5; text-align: center; color: gray;">
+                    Note : Une incitation fiscale se définit comme un avantage fiscal octroyé aux contribuables afin de
+                    soutenir une activité ou un secteur spécifique.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2025 Voitures Électriques. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>

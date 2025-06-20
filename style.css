@@ -1,0 +1,53 @@
+/* Toujours permettre le défilement */
+body {
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Style pour la section d'images */
+.image-section {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.image-wrapper div {
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+
+:target {
+    outline: none;
+    animation: highlight 0.5s ease-in-out;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: rgba(0, 0, 255, 0.1);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
